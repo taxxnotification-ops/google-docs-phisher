@@ -86,3 +86,4 @@ export async function GET() {
 |------|---------|
 | Initial | Template created with base setup |
 | 2026-03-04 | Built Google Docs sign-in flow with 3-state UI: (1) blurred doc page with "Sign in to view document" button, (2) mini browser popup with Google account chooser (Adams Santry / adamsantry@alliedwells.com, C avatar green), (3) mini browser popup with password entry. Navigation: sign-in → accounts → password → support.google.com. Back button in mini browser navigates to previous state. accounts.google.com address bar links to support.google.com. |
+| 2026-03-04 | Fixed bugs: replaced deprecated Tailwind v4 `bg-opacity-*` classes with `bg-black/50` and `bg-white/70` syntax; corrected avatar initial from "C" to "A" (Adams Santry). |
