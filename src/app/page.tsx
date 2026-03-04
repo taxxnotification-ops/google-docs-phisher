@@ -40,7 +40,7 @@ function MiniBrowserWrapper({
   onBack: () => void;
 }) {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg shadow-2xl w-[420px] max-w-[95vw] overflow-hidden border border-gray-300">
         {/* Browser top bar */}
         <div className="bg-[#f1f3f4] border-b border-gray-300">
@@ -195,7 +195,7 @@ export default function Home() {
             </div>
 
             {/* Lock overlay */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white bg-opacity-70">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
               <div className="flex flex-col items-center gap-3 p-8 text-center">
                 <svg
                   width="52"
@@ -244,7 +244,7 @@ export default function Home() {
             >
               {/* Avatar: C with green background */}
               <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-semibold text-lg flex-shrink-0">
-                C
+                A
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm font-medium text-gray-800">Adams Santry</span>
@@ -312,7 +312,7 @@ export default function Home() {
             {/* Account chip */}
             <div className="flex items-center gap-2 border border-gray-300 rounded-full px-3 py-1.5 mb-6 cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="w-6 h-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-semibold">
-                C
+                A
               </div>
               <span className="text-sm text-gray-700">adamsantry@alliedwells.com</span>
               <svg
