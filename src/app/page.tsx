@@ -195,8 +195,8 @@ export default function Home() {
             </div>
 
             {/* Lock overlay */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70">
-              <div className="flex flex-col items-center gap-3 p-8 text-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/80">
+              <div className="flex flex-col items-center gap-4 p-8 text-center">
                 <svg
                   width="52"
                   height="52"
@@ -212,20 +212,16 @@ export default function Home() {
                 <p className="text-gray-500 text-sm max-w-xs leading-relaxed">
                   Sign in with your Allied Wells account to view this document.
                 </p>
+                <button
+                  onClick={() => setPage("accounts")}
+                  className="mt-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white font-medium px-10 py-3.5 rounded-md text-base shadow-lg transition-colors"
+                >
+                  Sign in to view document
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Sign in button - centered at bottom */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-20">
-        <button
-          onClick={() => setPage("accounts")}
-          className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-medium px-10 py-3.5 rounded-md text-base shadow-lg transition-colors"
-        >
-          Sign in to view document
-        </button>
       </div>
 
       {/* ===== POPUP: ACCOUNTS (Image 2) ===== */}
